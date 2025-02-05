@@ -1,0 +1,21 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    command: /bin/bash /entrypoint.sh
+    platform: linux/amd64/v8
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=vanilla
+      - MSSQL_SA_PASSWORD=vanilla!
+    volumes:
+      - mssql_data:/var/opt/mssql/data
+      - mssql_log:/var/opt/mssql/log
+      - ./db/mssql/docker-entrypoint.sh:/entrypoint.sh
+      - ./db/mssql/docker-db-init.sh:/db-init.sh
+      - ./db/mssql/mssql-cars.sql:/db-init.sql
+volumes:
+  mssql_data:
+  mssql_log:
