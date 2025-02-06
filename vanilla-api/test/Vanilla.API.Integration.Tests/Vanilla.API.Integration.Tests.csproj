@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="8.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.1" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.1" />
@@ -20,11 +21,6 @@
 
     <ItemGroup>
         <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Common\" />
-      <Folder Include="Helper\" />
     </ItemGroup>
 
     <ItemGroup>
