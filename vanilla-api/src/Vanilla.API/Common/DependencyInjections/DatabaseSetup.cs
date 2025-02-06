@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using Vanilla.Application.Auth;
+using Vanilla.Domain.Entities;
 using Vanilla.Persistence;
+using ISession = Vanilla.Application.Auth.ISession;
 
 namespace Vanilla.API.Common.DependencyInjections;
 
@@ -13,6 +16,12 @@ public static class DatabaseSetup
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors();
         });
+        
+        services.AddScoped<ISession, Session>();
+        
+        // services
+        //     .AddIdentityApiEndpoints<AppUser>()
+        //     .AddEntityFrameworkStores<VanillaDbContext>();
         
         return services;
     }

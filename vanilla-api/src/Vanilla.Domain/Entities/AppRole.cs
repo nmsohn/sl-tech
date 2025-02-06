@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Vanilla.Domain.Entities;
 
-public class AppUser : IdentityUser<Guid>, IAuditable
+public class AppRole : IdentityRole<Guid>, IAuditable
 {
    public override Guid Id { get; set; } = Guid.CreateVersion7();
    public DateTime? CreatedAt { get; set; }

@@ -22,6 +22,6 @@
 //
 //         return Created(
 //             $"{nameof(UserController).Replace(nameof(Controller), "")}/{user.Id}",
-//             user); //todo adding a URL helper for url
+//             user);
 //     }
 // }
