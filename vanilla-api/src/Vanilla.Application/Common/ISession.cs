@@ -1,6 +1,6 @@
 using Vanilla.Domain.Common;
 
-namespace Vanilla.Application.Auth;
+namespace Vanilla.Application.Common;
 
 public interface ISession
 {

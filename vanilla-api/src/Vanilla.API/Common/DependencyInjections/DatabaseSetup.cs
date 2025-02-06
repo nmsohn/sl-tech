@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Vanilla.Application.Auth;
+using Vanilla.Application.Common;
 using Vanilla.Domain.Entities;
 using Vanilla.Persistence;
-using ISession = Vanilla.Application.Auth.ISession;
+using ISession = Vanilla.Application.Common.ISession;
 
 namespace Vanilla.API.Common.DependencyInjections;
 
