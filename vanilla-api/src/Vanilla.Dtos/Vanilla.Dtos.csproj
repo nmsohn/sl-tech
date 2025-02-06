@@ -8,6 +8,12 @@
 
     <ItemGroup>
       <Folder Include="Enums\" />
+      <Folder Include="Requests\User\" />
+      <Folder Include="Responses\User\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Vanilla.Domain\Vanilla.Domain.csproj" />
     </ItemGroup>
 
 </Project>
