@@ -17,8 +17,7 @@ public static class DatabaseSetup
                 .EnableDetailedErrors();
         });
         
-        services.AddScoped<ISession, Session>();
-        
+        // services.AddScoped<ISession, Session>();
         // services
         //     .AddIdentityApiEndpoints<AppUser>()
         //     .AddEntityFrameworkStores<VanillaDbContext>();

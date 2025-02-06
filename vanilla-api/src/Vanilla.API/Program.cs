@@ -8,8 +8,8 @@ builder.Services.AddProblemDetails();
 builder.Services.AddDatabase(builder.Configuration);
 builder.Services.AddSwaggerGen();
 builder.Services.AddExceptionHandler<ExceptionHandler>();
-// builder.Services.AddAuthorization();
 builder.Services.AddHttpContextAccessor();
+// builder.Services.AddAuthorization();
 // builder.Host.UseSerilog((_, _, lc) =>
 // {
 //     lc.ReadFrom.Configuration(builder.Configuration);
