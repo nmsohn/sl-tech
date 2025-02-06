@@ -1,6 +1,6 @@
 using Vanilla.Application.Mapping;
 
-namespace Vanilla.API.Common.DependencyInjections;
+namespace Vanilla.API.Common.Extensions;
 
 public static class ApplicationSetup
 {

@@ -1,10 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Vanilla.Application.Common;
-using Vanilla.Domain.Entities;
 using Vanilla.Persistence;
-using ISession = Vanilla.Application.Common.ISession;
 
-namespace Vanilla.API.Common.DependencyInjections;
+namespace Vanilla.API.Common.Extensions;
 
 public static class DatabaseSetup
 {
